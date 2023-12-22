@@ -17,7 +17,7 @@ class UserSeeder extends Seeder
         User::query()->create([
             "name" => "Akmal",
             "email" => "akmal@gmail.com",
-            "password" => Hash::make(env("DB_PASSWORD")),
+            "password" => Hash::make("eekmu241"),
             "token" => "secret"
         ]);
     }

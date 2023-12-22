@@ -38,7 +38,7 @@ class UserTest extends TestCase
     {
         $this->seed(UserSeeder::class);
 
-        $this->get('/users/login?email=akmal@gmail.com&password=' . env('DB_PASSWORD'))
+        $this->get('/users/login?email=akmal@gmail.com&password=eekmu241')
             ->assertRedirect('/users/current');
 
         $this->get('/users/login?email=salah&password=salah')
